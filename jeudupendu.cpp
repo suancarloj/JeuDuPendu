@@ -28,7 +28,7 @@ void JeuDuPendu::creerAction() {
 }
 
 void JeuDuPendu::nouvellePartie() const {
-
+	ui.centralwidget->setVisible(true);
 }
 
 void JeuDuPendu::fermerPartie() const {
