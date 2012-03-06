@@ -1,0 +1,8 @@
+infrarouge
+rouge
+orange
+jaune
+vert
+bleu
+violet
+ultraviolet

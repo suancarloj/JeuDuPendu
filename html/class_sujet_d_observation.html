@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Référence de la classe SujetDObservation</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.4 -->
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('class_sujet_d_observation.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe SujetDObservation</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="SujetDObservation" -->
+<p>Classe de base de tout "sujet d'observation".  
+ <a href="class_sujet_d_observation.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="sujet_d_observation_8h_source.html">sujetDObservation.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe d'héritage de SujetDObservation:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_sujet_d_observation.png" usemap="#SujetDObservation_map" alt=""/>
+  <map id="SujetDObservation_map" name="SujetDObservation_map">
+<area href="class_pendu.html" title="Classe pour jouer au pendu." alt="Pendu" shape="rect" coords="0,56,118,80"/>
+</map>
+ </div></div>
+
+<p><a href="class_sujet_d_observation-members.html">Liste de tous les membres</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#a3fea12198b4c8aabfa6e983c55b233cd">~SujetDObservation</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#a2ac2aeb901fa2bf7b39c37ad8489e367">attacher</a> (<a class="el" href="class_observateur.html">Observateur</a> *obs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#a07d6f3eda4572b9efeddc016f99bf6d5">detacher</a> (<a class="el" href="class_observateur.html">Observateur</a> *obs)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#ac3906aba7422f93c707e75f295c0d0e2">SujetDObservation</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#abcdace8e513f757257d22de934ef33bf">notifierChangement</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_observateur.html">Observateur</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sujet_d_observation.html#a5a392a94bac8e5b5c5f3c52e18de45db">mesObservateurs</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Classe de base de tout "sujet d'observation". </p>
+<p>Classe dont dérive toute source d'événement (ou "sujet d'observation") du modèle de conception "Observateur / SujetDObservation".</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>GOF (?). </dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_observateur.html" title="Classe abstraite de base de tout observateur.">Observateur</a>. </dd></dl>
+</div><hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a3fea12198b4c8aabfa6e983c55b233cd"></a><!-- doxytag: member="SujetDObservation::~SujetDObservation" ref="a3fea12198b4c8aabfa6e983c55b233cd" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SujetDObservation::~SujetDObservation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destructeur implémenté à vide car il n'a rien à faire. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3906aba7422f93c707e75f295c0d0e2"></a><!-- doxytag: member="SujetDObservation::SujetDObservation" ref="ac3906aba7422f93c707e75f295c0d0e2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SujetDObservation::SujetDObservation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Constructeur protégé pour éviter l'instanciation. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a2ac2aeb901fa2bf7b39c37ad8489e367"></a><!-- doxytag: member="SujetDObservation::attacher" ref="a2ac2aeb901fa2bf7b39c37ad8489e367" args="(Observateur *obs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SujetDObservation::attacher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observateur.html">Observateur</a> *&#160;</td>
+          <td class="paramname"><em>obs</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Méthode permettant à un observateur de s'enregistrer comme écouteur du sujet d'observation.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obs</td><td>un pointeur vers le candidat observateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a07d6f3eda4572b9efeddc016f99bf6d5"></a><!-- doxytag: member="SujetDObservation::detacher" ref="a07d6f3eda4572b9efeddc016f99bf6d5" args="(Observateur *obs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SujetDObservation::detacher </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_observateur.html">Observateur</a> *&#160;</td>
+          <td class="paramname"><em>obs</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Méthode permettant à un observateur de se retirer de la liste des écouteurs patentés du sujet d'observation.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obs</td><td>l'adresse de l'observateur désintéressé. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abcdace8e513f757257d22de934ef33bf"></a><!-- doxytag: member="SujetDObservation::notifierChangement" ref="abcdace8e513f757257d22de934ef33bf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void SujetDObservation::notifierChangement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Méthode qui se charge de prévenir les observateurs d'un changement d'état du sujet d'observatuion, en invoquant leur méthode rafraichir.</p>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_observateur.html#a4fcbecba73ee923d201246207b8470ce">Observateur::rafraichir(SujetDObservation *)</a>. </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a5a392a94bac8e5b5c5f3c52e18de45db"></a><!-- doxytag: member="SujetDObservation::mesObservateurs" ref="a5a392a94bac8e5b5c5f3c52e18de45db" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_observateur.html">Observateur</a> *&gt; <a class="el" href="class_sujet_d_observation.html#a5a392a94bac8e5b5c5f3c52e18de45db">SujetDObservation::mesObservateurs</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Le vecteur d'observateurs enregistrés. </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>ClasseMetier/O_SDO/<a class="el" href="sujet_d_observation_8h_source.html">sujetDObservation.h</a></li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="class_sujet_d_observation.html">SujetDObservation</a>      </li>
+      <li class="footer">Généré le Thu Feb 9 2012 21:51:13 par&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
+    </ul>
+  </div>
+
+</body>
+</html>

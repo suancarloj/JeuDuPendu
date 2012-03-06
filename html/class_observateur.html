@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Référence de la classe Observateur</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript">
+$(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.7.4 -->
+<div id="top">
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('class_observateur.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Observateur</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="Observateur" -->
+<p>Classe abstraite de base de tout observateur.  
+ <a href="class_observateur.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="observateur_8h_source.html">observateur.h</a>&gt;</code></p>
+
+<p><a href="class_observateur-members.html">Liste de tous les membres</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observateur.html#a4fcbecba73ee923d201246207b8470ce">rafraichir</a> (<a class="el" href="class_sujet_d_observation.html">SujetDObservation</a> *sdo)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_observateur.html#a2c166d13de9356461a64b6c897d4dd3b">~Observateur</a> ()</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Classe abstraite de base de tout observateur. </p>
+<p>Classe dont dérive tout écouteur (ou "observateur") du modèle de conception "Observateur / SujetDObservation".</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>GOF (?). </dd></dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_sujet_d_observation.html" title="Classe de base de tout &quot;sujet d&#39;observation&quot;.">SujetDObservation</a>. </dd></dl>
+</div><hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a2c166d13de9356461a64b6c897d4dd3b"></a><!-- doxytag: member="Observateur::~Observateur" ref="a2c166d13de9356461a64b6c897d4dd3b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Observateur::~Observateur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Destructeur implémenté à vide car il n'a rien à faire. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a4fcbecba73ee923d201246207b8470ce"></a><!-- doxytag: member="Observateur::rafraichir" ref="a4fcbecba73ee923d201246207b8470ce" args="(SujetDObservation *sdo)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Observateur::rafraichir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_sujet_d_observation.html">SujetDObservation</a> *&#160;</td>
+          <td class="paramname"><em>sdo</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Méthode virtuelle pure que chaque observateur concret doit implémenter : c'est cette méthode qu'appelle le sujet observé lors d'une notification.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sdo</td><td>le sujet d'observation qui notifie un changement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>Voir également:</b></dt><dd><a class="el" href="class_sujet_d_observation.html#abcdace8e513f757257d22de934ef33bf">SujetDObservation::notifierChangement()</a>. </dd></dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>ClasseMetier/O_SDO/<a class="el" href="observateur_8h_source.html">observateur.h</a></li>
+</ul>
+</div>
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="class_observateur.html">Observateur</a>      </li>
+      <li class="footer">Généré le Thu Feb 9 2012 21:51:12 par&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </li>
+    </ul>
+  </div>
+
+</body>
+</html>
