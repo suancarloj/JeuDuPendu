@@ -28,11 +28,23 @@ void JeuDuPendu::creerAction() {
 }
 
 void JeuDuPendu::nouvellePartie() const {
+	DialogueConfiguration dialogueConfiguration((QWidget *) this);
+	int retour = dialogueConfiguration.exec();
+
+	if(retour == QDialog::Rejected) return;
+
 	ui.centralwidget->setVisible(true);
+	ui.action_Nouveau->setDisabled(true);
+	ui.action_Fermer->setEnabled(true);
+	ui.menu_Observateur->setEnabled(true);
 }
 
 void JeuDuPendu::fermerPartie() const {
 
+	ui.centralwidget->setVisible(false);
+	ui.action_Nouveau->setEnabled(true);
+	ui.action_Fermer->setDisabled(true);
+	ui.menu_Observateur->setDisabled(true);
 }
 
 void JeuDuPendu::observateurProposition(bool obs) const {

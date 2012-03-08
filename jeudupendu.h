@@ -3,6 +3,7 @@
 
 #include <QtGui/QMainWindow>
 #include "ui_jeudupendu.h"
+#include "dialogueconfiguration.h"
 #include "moteur/pendu.h"
 #include <QMessageBox>
 
