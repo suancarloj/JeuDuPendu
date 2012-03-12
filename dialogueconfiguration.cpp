@@ -4,9 +4,26 @@ DialogueConfiguration::DialogueConfiguration(QWidget *parent)
     : QDialog(parent)
 {
 	ui.setupUi(this);
+	connect(ui.sbNbLettres, SIGNAL(valueChanged(int)), this, SLOT(setVie(int)));
 }
+
+QString DialogueConfiguration::getNomFichier() const {
+	return this->nomFichier;
+}
+
+unsigned DialogueConfiguration::getVie() const {
+	return this->vie;
+}
+
+
+
+DialogueConfiguration::~DialogueConfiguration()
+{
+
+}
+
 void DialogueConfiguration::naviguer() {
-	nomFichier = QFileDialog::getOpenFileName(this, "Choisir un fichier de mots", QDir::currentPath());
+	this->nomFichier = QFileDialog::getOpenFileName(this, "Choisir un fichier de mots", QDir::currentPath());
 
 	if(nomFichier != "") {
 		ui.lbNomFichier->setText(QFileInfo(nomFichier).fileName());
@@ -14,19 +31,9 @@ void DialogueConfiguration::naviguer() {
 		ui.lbNomFichier->setText("(rien)");
 	}
 }
-
-unsigned int DialogueConfiguration::getVie() const {
-	return this->vie;
-}
-
 void DialogueConfiguration::setVie(int vie) {
 	if(vie < 0 || vie > 12)
 		throw("Nombre de vie doit être compris entre 0 et 12.");
 
 	this->vie = vie;
-}
-
-DialogueConfiguration::~DialogueConfiguration()
-{
-
 }

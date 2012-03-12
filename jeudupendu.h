@@ -1,11 +1,15 @@
 #ifndef JEUDUPENDU_H
 #define JEUDUPENDU_H
 
-#include <QtGui/QMainWindow>
+#include <QMainWindow>
+#include <QMessageBox>
+#include <QCloseEvent>
 #include "ui_jeudupendu.h"
 #include "dialogueconfiguration.h"
 #include "moteur/pendu.h"
-#include <QMessageBox>
+#include "O_SDO/sujetDObservation.h"
+
+#include "ObservateurProposition.h"
 
 class JeuDuPendu : public QMainWindow
 {
@@ -19,14 +23,18 @@ public:
 private:
     Ui::JeuDuPenduClass ui;
     QAction * action_Aide;
+    Pendu * pendu;
+    ObservateurProposition * obsPro;
 
 
 private slots:
-	void nouvellePartie() const;
-	void fermerPartie() const;
-	void observateurProposition(bool) const;
-	void observateurPotence(bool) const;
-	void afficherAide() const;
+	void nouvellePartie();
+	void fermerPartie();
+	void observateurProposition(bool);
+	void observateurPotence(bool);
+	void afficherAide();
+	void lettreSelectionnee(const QString &);
+	void decocherMenuProposition();
 
 };
 

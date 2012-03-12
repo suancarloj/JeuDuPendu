@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'jeudupendu.ui'
 **
-** Created: Tue 6. Mar 11:18:20 2012
+** Created: Sun 11. Mar 18:06:02 2012
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -37,7 +37,7 @@ public:
     QWidget *centralwidget;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
-    QComboBox *comboBox;
+    QComboBox *cbLettres;
     QMenuBar *menubar;
     QMenu *menu_Jeu;
     QMenu *menu_Observateur;
@@ -55,6 +55,7 @@ public:
         action_Fermer->setEnabled(false);
         action_Proposition = new QAction(JeuDuPenduClass);
         action_Proposition->setObjectName(QString::fromUtf8("action_Proposition"));
+        action_Proposition->setCheckable(true);
         action_Proposition->setEnabled(true);
         actionP_otence = new QAction(JeuDuPenduClass);
         actionP_otence->setObjectName(QString::fromUtf8("actionP_otence"));
@@ -78,17 +79,17 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        comboBox = new QComboBox(centralwidget);
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-        comboBox->setEnabled(true);
-        comboBox->setMaximumSize(QSize(75, 16777215));
+        cbLettres = new QComboBox(centralwidget);
+        cbLettres->setObjectName(QString::fromUtf8("cbLettres"));
+        cbLettres->setEnabled(true);
+        cbLettres->setMaximumSize(QSize(75, 16777215));
 
-        horizontalLayout->addWidget(comboBox);
+        horizontalLayout->addWidget(cbLettres);
 
         JeuDuPenduClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(JeuDuPenduClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 400, 20));
+        menubar->setGeometry(QRect(0, 0, 400, 21));
         menu_Jeu = new QMenu(menubar);
         menu_Jeu->setObjectName(QString::fromUtf8("menu_Jeu"));
         menu_Observateur = new QMenu(menubar);
@@ -121,9 +122,8 @@ public:
         actionP_otence->setText(QApplication::translate("JeuDuPenduClass", "P&otence", 0, QApplication::UnicodeUTF8));
         action_Quitter->setText(QApplication::translate("JeuDuPenduClass", "&Quitter", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("JeuDuPenduClass", "Choisissez une lettre :", 0, QApplication::UnicodeUTF8));
-        comboBox->clear();
-        comboBox->insertItems(0, QStringList()
-         << QString()
+        cbLettres->clear();
+        cbLettres->insertItems(0, QStringList()
          << QApplication::translate("JeuDuPenduClass", "A", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("JeuDuPenduClass", "B", 0, QApplication::UnicodeUTF8)
          << QApplication::translate("JeuDuPenduClass", "C", 0, QApplication::UnicodeUTF8)

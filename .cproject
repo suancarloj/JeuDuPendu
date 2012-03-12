@@ -19,7 +19,7 @@
 	</storageModule>
 	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="org.eclipse.cdt.core.pathentry">
-		<pathentry kind="src" path=""/>
+		<pathentry excluding="moteur/|O_SDO/" kind="src" path=""/>
 		<pathentry include="C:/MinGW/include" kind="inc" path="" system="true"/>
 		<pathentry include="C:/MinGW/lib/gcc/mingw32/4.5.2/include/c++/mingw32" kind="inc" path="" system="true"/>
 		<pathentry include="C:/MinGW/lib/gcc/mingw32/4.5.2/include/c++/tr1" kind="inc" path="" system="true"/>
@@ -52,11 +52,14 @@
 		<pathentry include="C:/Qt/4.7.3/include/QtXml" kind="inc" path="" system="true"/>
 		<pathentry include="C:/Qt/4.7.3/include/QtXmlPatterns" kind="inc" path="" system="true"/>
 		<pathentry kind="out" path=""/>
+		<pathentry kind="src" path="moteur"/>
+		<pathentry kind="src" path="O_SDO"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
 		<buildTargets>
 			<target name="Qt Release Build" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>release</buildTarget>
 				<stopOnError>false</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
@@ -64,12 +67,20 @@
 			</target>
 			<target name="Qt Debug Build" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
+				<buildArguments/>
 				<buildTarget>debug</buildTarget>
 				<stopOnError>false</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>true</runAllBuilders>
 			</target>
 			<target name="debug" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildTarget>debug</buildTarget>
+				<stopOnError>false</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="debug (1)" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
 				<buildArguments/>
 				<buildTarget>debug</buildTarget>

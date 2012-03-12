@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'dialogueconfiguration.ui'
 **
-** Created: Wed 7. Mar 22:09:55 2012
+** Created: Sun 11. Mar 17:23:29 2012
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -133,7 +133,7 @@ public:
         retranslateUi(DialogueConfigurationClass);
         QObject::connect(pb_OK, SIGNAL(clicked()), DialogueConfigurationClass, SLOT(accept()));
         QObject::connect(pb_Annuler, SIGNAL(clicked()), DialogueConfigurationClass, SLOT(reject()));
-        QObject::connect(sbNbLettres, SIGNAL(valueChanged(int)), DialogueConfigurationClass, SLOT(setVie()));
+        QObject::connect(sbNbLettres, SIGNAL(valueChanged(int)), DialogueConfigurationClass, SLOT(setVie(int)));
         QObject::connect(pbFichier, SIGNAL(clicked()), DialogueConfigurationClass, SLOT(naviguer()));
 
         QMetaObject::connectSlotsByName(DialogueConfigurationClass);

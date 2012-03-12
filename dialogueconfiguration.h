@@ -6,6 +6,7 @@
 #include <QFileDialog>
 #include <QDir>
 
+
 class DialogueConfiguration : public QDialog
 {
     Q_OBJECT
@@ -13,13 +14,13 @@ class DialogueConfiguration : public QDialog
 public:
     DialogueConfiguration(QWidget *parent = 0);
     QString getNomFichier() const;
-    unsigned int getVie() const;
+    unsigned getVie() const;
     ~DialogueConfiguration();
 
 private:
     Ui::DialogueConfigurationClass ui;
     QString nomFichier;
-    unsigned int vie;
+    unsigned vie;
 
 
 private slots:

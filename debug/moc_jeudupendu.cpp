@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'jeudupendu.h'
 **
-** Created: Tue 6. Mar 22:28:40 2012
+** Created: Sun 11. Mar 21:11:14 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_JeuDuPendu[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -36,6 +36,8 @@ static const uint qt_meta_data_JeuDuPendu[] = {
       44,   11,   11,   11, 0x08,
       73,   11,   11,   11, 0x08,
       98,   11,   11,   11, 0x08,
+     113,   11,   11,   11, 0x08,
+     141,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -44,6 +46,8 @@ static const char qt_meta_stringdata_JeuDuPendu[] = {
     "JeuDuPendu\0\0nouvellePartie()\0"
     "fermerPartie()\0observateurProposition(bool)\0"
     "observateurPotence(bool)\0afficherAide()\0"
+    "lettreSelectionnee(QString)\0"
+    "decocherMenuProposition()\0"
 };
 
 const QMetaObject JeuDuPendu::staticMetaObject = {
@@ -80,9 +84,11 @@ int JeuDuPendu::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 2: observateurProposition((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 3: observateurPotence((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 4: afficherAide(); break;
+        case 5: lettreSelectionnee((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 6: decocherMenuProposition(); break;
         default: ;
         }
-        _id -= 5;
+        _id -= 7;
     }
     return _id;
 }

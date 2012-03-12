@@ -5,7 +5,6 @@
 
 int main(int argc, char *argv[])
 {
-	int n;
     QApplication a(argc, argv);
     JeuDuPendu w;
     w.show();

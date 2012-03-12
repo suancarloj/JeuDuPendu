@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'dialogueconfiguration.h'
 **
-** Created: Wed 7. Mar 22:15:18 2012
+** Created: Sun 11. Mar 17:29:12 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_DialogueConfiguration[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,12 +32,14 @@ static const uint qt_meta_data_DialogueConfiguration[] = {
 
  // slots: signature, parameters, type, tag, flags
       23,   22,   22,   22, 0x08,
+      34,   22,   22,   22, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_DialogueConfiguration[] = {
     "DialogueConfiguration\0\0naviguer()\0"
+    "setVie(int)\0"
 };
 
 const QMetaObject DialogueConfiguration::staticMetaObject = {
@@ -70,9 +72,10 @@ int DialogueConfiguration::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: naviguer(); break;
+        case 1: setVie((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

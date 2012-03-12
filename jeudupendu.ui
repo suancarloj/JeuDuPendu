@@ -45,7 +45,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="cbLettres">
       <property name="enabled">
        <bool>true</bool>
       </property>
@@ -55,11 +55,6 @@
         <height>16777215</height>
        </size>
       </property>
-      <item>
-       <property name="text">
-        <string> </string>
-       </property>
-      </item>
       <item>
        <property name="text">
         <string>A</string>
@@ -200,7 +195,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Jeu">
@@ -239,6 +234,9 @@
    </property>
   </action>
   <action name="action_Proposition">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="enabled">
     <bool>true</bool>
    </property>
